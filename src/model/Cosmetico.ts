@@ -1,6 +1,6 @@
 import { Produto } from "./Produto";
 
-export class Cosmético extends Produto {
+export class Cosmetico extends Produto {
     
     private _fragancia: string;
 

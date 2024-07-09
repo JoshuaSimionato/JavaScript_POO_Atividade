@@ -1,17 +1,21 @@
 import * as readlinesync from "readline-sync"
 import { colors } from './src/util/Colors';
-import { Produto } from "./src/model/Produto";
 import { Medicamento } from "./src/model/Medicamento";
+import { Cosmetico } from "./src/model/Cosmetico";
 
 export function main() {
 
     let menu: number;
 
-    const produto: Produto = new Produto(1, 'Dor Flex', 3, 30);
-    produto.visualizar()
+    // const produto: Produto = new Produto(1, 'Dor Flex', 2, 30); não se pode estanciar essa classe, pois a classe mão e abstrata
+    // produto.visualizar()
 
-    const med: Medicamento = new Medicamento(1, 'Rivotril', 3, 45, "Mega Volto");
-    produto.visualizar()
+    const med: Medicamento = new Medicamento(1, 'Rivotril', 1, 45, "Mega Volto");
+    med.visualizar()
+    
+
+    const cos: Cosmetico = new Cosmetico(3, 'Dor Flex', 1, 70, 'Baumilha')
+    cos.visualizar()
 
 
 

@@ -1,2 +1,2 @@
-console.log(colors.fg.bluestrong,
-                    "\nOpção Inválida!\n", colors.reset);
+const cos: Cosmetico = new Cosmetico(3, 'Dor Flex', 1, 70, 'Baumilha')
+    // cos.visualizar()

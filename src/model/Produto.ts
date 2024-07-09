@@ -1,6 +1,6 @@
 import { colors } from "../util/Colors";
 
-export  class Produto{    //Classe Mãe
+export abstract class Produto {    //Classe Mãe
 
     // Atributos da Classe Produto
     private _id: number;
@@ -49,7 +49,7 @@ export  class Produto{    //Classe Mãe
 
 	public set preco(value: number) {
 		this._preco = value;
-	}
+	} 
 
     public visualizar(): void {
         let tipo: string = "";
@@ -72,7 +72,6 @@ export  class Produto{    //Classe Mãe
         console.log(`Tipo do Produto: ${this._tipo}`);
         console.log(`Preço do Produto: ${this._preco.toLocaleString('pt-BR', 
             { style: 'currency', currency: 'BRL'})}`);
-        console.log(`\n***************************************\n`);
 
     }
 
